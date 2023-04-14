@@ -1,24 +1,33 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "composite": true,
-    "declaration": true,
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "module": "ES2015",
-    "target": "ES5",
-    "lib": ["esnext", "dom"],
-    "jsx": "react",
-    "isolatedModules": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "skipLibCheck": true
-  },
-  "exclude": ["node_modules", "dist"]
-}
+    "compilerOptions": {
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "composite": true,
+      "declaration": true,
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "module": "CommonJS",
+      "target": "ES5",
+      "lib": ["esnext", "dom"],
+      "jsx": "react",
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "allowSyntheticDefaultImports": true,
+      "strictNullChecks": true,
+      "noImplicitThis": true,
+      "skipLibCheck": true
+    },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "./src/*.stories.tsx",
+      "./src/*.stories.ts",
+      "./src/**/*.stories.tsx",
+      ".storybook"
+    ],
+    "include": ["./src/**/*"]
+  }
+  

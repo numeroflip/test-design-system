@@ -1,2 +1,5 @@
-import { Button as MUIButton } from "@mui/material";
-export var Button = MUIButton;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Button = void 0;
+var material_1 = require("@mui/material");
+exports.Button = material_1.Button;
