@@ -6,7 +6,7 @@
       "declaration": true,
       "noImplicitAny": true,
       "esModuleInterop": true,
-      "module": "ESNext",
+      "module": "UMD",
       "target": "ES5",
       "lib": ["esnext", "dom"],
       "jsx": "react",
