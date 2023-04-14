@@ -5,7 +5,8 @@
   "files": [
     "dist"
   ],
-  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo",
     "test": "echo \"Error: no test specified\" && exit 1",
