@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import {
     borders,
     BordersProps,
@@ -20,7 +19,8 @@ import {
     TypographyProps,
     compose,
     breakpoints,
-  } from '@mui/system';
+  } from '@material-ui/system';
+  import styled from 'styled-components';
   
   type BoxProps = BordersProps &
     DisplayProps &
@@ -48,3 +48,4 @@ import {
     ${typography}
     ${breakpointsFn}
   `;
+  

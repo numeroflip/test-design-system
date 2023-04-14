@@ -1,5 +1,6 @@
 import deepMerge from 'deepmerge';
-import { createBreakpoints, createTheme } from '@mui/system';
+import { createTheme } from '@material-ui/core/styles';
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
 
 const breakpoints = createBreakpoints({});
 
@@ -96,6 +97,11 @@ let baseMuiTheme = createTheme({
       fontSize: 12,
       fontWeight: 400,
       letterSpacing: '.4px',
+    },
+  },
+  props: {
+    MuiButtonBase: {
+      disableRipple: true, // No more ripple, on the whole application 💣!
     },
   },
 });

@@ -8,8 +8,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Box = void 0;
-var styled_1 = __importDefault(require("@emotion/styled"));
-var system_1 = require("@mui/system");
+var system_1 = require("@material-ui/system");
+var styled_components_1 = __importDefault(require("styled-components"));
 var breakpointsFn = (0, system_1.breakpoints)((0, system_1.compose)(system_1.display, system_1.flexbox, system_1.palette, system_1.positions, system_1.sizing, system_1.spacing, system_1.typography));
-exports.Box = styled_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n  "], ["\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n  "])), system_1.borders, system_1.display, system_1.flexbox, system_1.palette, system_1.positions, system_1.shadows, system_1.sizing, system_1.spacing, system_1.typography, breakpointsFn);
+exports.Box = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n  "], ["\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n  "])), system_1.borders, system_1.display, system_1.flexbox, system_1.palette, system_1.positions, system_1.shadows, system_1.sizing, system_1.spacing, system_1.typography, breakpointsFn);
 var templateObject_1;

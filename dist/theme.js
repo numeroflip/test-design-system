@@ -6,9 +6,10 @@ var _a, _b, _c;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.theme = void 0;
 var deepmerge_1 = __importDefault(require("deepmerge"));
-var system_1 = require("@mui/system");
-var breakpoints = (0, system_1.createBreakpoints)({});
-var baseMuiTheme = (0, system_1.createTheme)({
+var styles_1 = require("@material-ui/core/styles");
+var createBreakpoints_1 = __importDefault(require("@material-ui/core/styles/createBreakpoints"));
+var breakpoints = (0, createBreakpoints_1.default)({});
+var baseMuiTheme = (0, styles_1.createTheme)({
     palette: {
         primary: {
             light: '#ff933e',
@@ -103,6 +104,11 @@ var baseMuiTheme = (0, system_1.createTheme)({
             fontSize: 12,
             fontWeight: 400,
             letterSpacing: '.4px',
+        },
+    },
+    props: {
+        MuiButtonBase: {
+            disableRipple: true, // No more ripple, on the whole application 💣!
         },
     },
 });

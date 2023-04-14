@@ -1,19 +1,17 @@
 export declare const theme: {
-    shape: import("@mui/system").Shape;
-    breakpoints: import("@mui/system").Breakpoints;
+    shape: import("@material-ui/core/styles/shape").Shape;
+    breakpoints: import("@material-ui/core/styles/createBreakpoints").Breakpoints;
     direction: "ltr" | "rtl";
-    palette: Record<string, any> & {
-        mode: "light" | "dark";
-    };
-    shadows: unknown;
-    spacing: import("@mui/system").Spacing;
-    transitions: unknown;
-    components: Record<string, any>;
-    mixins: unknown;
-    typography: unknown;
-    zIndex: unknown;
-    unstable_sxConfig: import("@mui/system").SxConfig;
-    unstable_sx: (props: import("@mui/system").SxProps<import("@mui/system").Theme>) => import("@mui/styled-engine").CSSObject;
+    mixins: import("@material-ui/core/styles/createMixins").Mixins;
+    overrides: import("@material-ui/core/styles/overrides").Overrides;
+    palette: import("@material-ui/core/styles/createPalette").Palette;
+    props: import("@material-ui/core/styles/props").ComponentsProps;
+    shadows: import("@material-ui/core/styles/shadows").Shadows;
+    spacing: import("@material-ui/core/styles/createSpacing").Spacing;
+    transitions: import("@material-ui/core/styles").Transitions;
+    typography: import("@material-ui/core/styles/createTypography").Typography;
+    zIndex: import("@material-ui/core/styles/zIndex").ZIndex;
+    unstable_strictMode: boolean;
 } & {
     typography: {
         fontWeightSlab: number;
