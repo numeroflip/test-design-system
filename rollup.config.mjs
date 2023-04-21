@@ -15,5 +15,6 @@ export default {
       format: "esm",
     },
   ],
-  plugins: [nodeResolve(), commonjs(), css()]
+  plugins: [nodeResolve(), commonjs(), css()],
+  external: [/^@material-ui.*/gm]
 };
