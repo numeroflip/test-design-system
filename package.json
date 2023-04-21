@@ -12,9 +12,9 @@
     "clean": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:rollup": "npm run clean && rollup --config",
-    "build": "npm run clean &&  npm run build:cjs && npm run build:esm",
-    "build:cjs": "tsc --outDir dist/cjs",
-    "build:esm": "tsc --outDir dist/esm --module esnext"
+    "build": "npm run clean &&  npm run build:cjs &&  npm run build:esm",
+    "build:cjs": "tsc --outDir dist/cjs && cp ./src/Form/material.css ./dist/cjs/Form/material.css",
+    "build:esm": "tsc --outDir dist/esm --module esnext && cp ./src/Form/material.css ./dist/esm/Form/material.css"
   },
   "repository": {
     "type": "git",

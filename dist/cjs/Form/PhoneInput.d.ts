@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { PhoneInputProps as BasePhoneInputProps } from 'react-phone-input-2';
-import 'react-phone-input-2/lib/material.css';
+import './material.css';
 type InputProps = BasePhoneInputProps & {
     error?: boolean;
 };
