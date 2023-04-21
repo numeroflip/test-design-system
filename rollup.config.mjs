@@ -16,7 +16,7 @@ export default {
       format: "esm",
     },
   ],
-  plugins: [nodeResolve({ browser: true }), commonjs(), typescript(), css()],
-  external: ["react", "react-dom"],
+  plugins: [nodeResolve(), commonjs(), typescript(), css()],
+  // external: ["react", "react-dom"],
   // external: [/^@material-ui.*/gm, "react", "react-dom", "styled-components"],
 };
