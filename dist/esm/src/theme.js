@@ -1,4 +1,4 @@
-import deepMerge from 'deepmerge';
+import deepMerge from '../node_modules/deepmerge/dist/cjs.js';
 import _default from '../node_modules/@material-ui/core/styles/createBreakpoints.js';
 import { createMuiTheme } from '../node_modules/@material-ui/core/esm/styles/createTheme.js';
 
