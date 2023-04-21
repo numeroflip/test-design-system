@@ -17,5 +17,5 @@ export default {
     },
   ],
   plugins: [nodeResolve({ browser: true }), commonjs(), typescript(), css()],
-  external: [/^@material-ui.*/gm, "react", "react-dom", "styled-components"],
+  // external: [/^@material-ui.*/gm, "react", "react-dom", "styled-components"],
 };
