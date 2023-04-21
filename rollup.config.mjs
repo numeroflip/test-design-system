@@ -5,16 +5,17 @@ import commonjs from "@rollup/plugin-commonjs";
 
 export default {
   input: "dist/ts/index.js",
+  preserveModules: true,
   output: [
     {
-      file: packageJson.main,
+      dir: "dist/cjs",
       format: "cjs",
     },
     {
-      file: packageJson.module,
+      dir: "dist/esm",
       format: "esm",
     },
   ],
-  plugins: [nodeResolve(), commonjs(), css()],
+  plugins: [nodeResolve({ browser: true }), commonjs(), css()],
   external: [/^@material-ui.*/gm, "react", "react-dom", "styled-components"],
 };

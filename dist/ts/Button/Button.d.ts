@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { ButtonBaseProps } from '@material-ui/core';
 type Size = 'lg' | 'md';
 type Variant = 'primary' | 'secondary' | 'tertiary';
