@@ -1,12 +1,12 @@
 'use strict';
 
 var cjs = require('../../node_modules/deepmerge/dist/cjs.js');
-var styles = require('@material-ui/core/styles');
-var createBreakpoints = require('@material-ui/core/styles/createBreakpoints');
+var createBreakpoints = require('../../node_modules/@material-ui/core/styles/createBreakpoints.js');
+var createTheme = require('../../node_modules/@material-ui/core/esm/styles/createTheme.js');
 
 var _a, _b, _c;
 var breakpoints = createBreakpoints({});
-var baseMuiTheme = styles.createMuiTheme({
+var baseMuiTheme = createTheme.createMuiTheme({
     palette: {
         primary: {
             light: '#ff933e',

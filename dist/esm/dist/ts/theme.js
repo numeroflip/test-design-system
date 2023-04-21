@@ -1,9 +1,9 @@
 import deepMerge from '../../node_modules/deepmerge/dist/cjs.js';
-import { createMuiTheme } from '@material-ui/core/styles';
-import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
+import _default from '../../node_modules/@material-ui/core/styles/createBreakpoints.js';
+import { createMuiTheme } from '../../node_modules/@material-ui/core/esm/styles/createTheme.js';
 
 var _a, _b, _c;
-var breakpoints = createBreakpoints({});
+var breakpoints = _default({});
 var baseMuiTheme = createMuiTheme({
     palette: {
         primary: {

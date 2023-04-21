@@ -1,7 +1,10 @@
-import React from 'react';
-import { Typography as Typography$1 } from '@material-ui/core';
-import { breakpoints, compose, spacing, typography } from '@material-ui/system';
-import styled, { css } from 'styled-components';
+import React from '../../../node_modules/react/index.js';
+import styled, { css as Ce } from '../../../node_modules/styled-components/dist/styled-components.browser.esm.js';
+import breakpoints from '../../../node_modules/@material-ui/system/esm/breakpoints.js';
+import compose from '../../../node_modules/@material-ui/system/esm/compose.js';
+import spacing from '../../../node_modules/@material-ui/system/esm/spacing.js';
+import typography from '../../../node_modules/@material-ui/system/esm/typography.js';
+import MuiTypography from '../../../node_modules/@material-ui/core/esm/Typography/Typography.js';
 
 var __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
@@ -32,13 +35,13 @@ var __rest = (undefined && undefined.__rest) || function (s, e) {
 var breakpointSpacing = breakpoints(compose(spacing, typography));
 var CustomTypography = function (_a) {
     _a.slab; var restProps = __rest(_a, ["slab"]);
-    return React.createElement(Typography$1, __assign({}, restProps));
+    return React.createElement(MuiTypography, __assign({}, restProps));
 };
 var Typography = styled(CustomTypography)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n  ", "\n  ", "\n"])), spacing, typography, breakpointSpacing, function (_a) {
     var slab = _a.slab;
     return slab && slabStyles;
 });
-var slabStyles = css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-family: ", ", serif;\n  font-weight: ", ";\n  font-style: italic;\n"], ["\n  font-family: ", ", serif;\n  font-weight: ", ";\n  font-style: italic;\n"])), function (_a) {
+var slabStyles = Ce(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-family: ", ", serif;\n  font-weight: ", ";\n  font-style: italic;\n"], ["\n  font-family: ", ", serif;\n  font-weight: ", ";\n  font-style: italic;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.typography.fontFamilySlab;
 }, function (_a) {

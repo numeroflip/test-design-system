@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from '../../../node_modules/react/index.js';
+import styled from '../../../node_modules/styled-components/dist/styled-components.browser.esm.js';
 
 var __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
