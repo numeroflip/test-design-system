@@ -2,7 +2,7 @@ import packageJson from "./package.json" assert { type: "json" };
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import css from "rollup-plugin-import-css";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from 'rollup-plugin-typescript2';
+import typescript from "rollup-plugin-typescript2";
 
 export default {
   input: "src/index.ts",
@@ -17,5 +17,6 @@ export default {
     },
   ],
   plugins: [nodeResolve({ browser: true }), commonjs(), typescript(), css()],
+  external: ["react", "react-dom"],
   // external: [/^@material-ui.*/gm, "react", "react-dom", "styled-components"],
 };
