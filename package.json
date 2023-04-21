@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:rollup": "npm run clean && tsc --outDir dist/ts --module esnext && rollup --config",
+    "build:rollup": "npm run clean && rollup --config",
     "build": "npm run clean &&  npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --outDir dist/cjs",
     "build:esm": "tsc --outDir dist/esm --module esnext"
@@ -33,7 +33,8 @@
     "styled-components": "^5.2.1"
   },
   "dependencies": {
-    "deepmerge": "^4.3.1"
+    "deepmerge": "^4.3.1",
+    "rollup-plugin-typescript2": "^0.34.1"
   },
   "devDependencies": {
     "@material-ui/core": "^4.10.2",
