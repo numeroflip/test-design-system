@@ -1,9 +1,9 @@
 var _a, _b, _c;
 import deepMerge from 'deepmerge';
-import { createTheme } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
 var breakpoints = createBreakpoints({});
-var baseMuiTheme = createTheme({
+var baseMuiTheme = createMuiTheme({
     palette: {
         primary: {
             light: '#ff933e',
