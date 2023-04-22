@@ -7,14 +7,16 @@
   ],
   "types": "dist/cjs/index.d.ts",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/src/index.js",
+  "module": "dist/esm/index.js",
+  "source": "src/index.ts",
   "scripts": {
     "clean": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:rollup": "npm run clean && rollup --config",
-    "build": "npm run clean &&  npm run build:cjs &&  npm run build:esm",
-    "build:cjs": "tsc --outDir dist/cjs && cp ./src/Form/material.css ./dist/cjs/Form/material.css",
-    "build:esm": "tsc --outDir dist/esm --module esnext && cp ./src/Form/material.css ./dist/esm/Form/material.css"
+    "build:parcel": "npm run clean && parcel build",
+    "build:tsc": "npm run clean &&  npm run build:tsc-cjs &&  npm run build:tsc-esm",
+    "build:tsc-cjs": "tsc --outDir dist/cjs && cp ./src/Form/material.css ./dist/cjs/Form/material.css",
+    "build:tsc-esm": "tsc --outDir dist/esm --module esnext && cp ./src/Form/material.css ./dist/esm/Form/material.css"
   },
   "repository": {
     "type": "git",
@@ -34,20 +36,23 @@
   },
   "dependencies": {
     "deepmerge": "^4.3.1",
-    "rollup-plugin-typescript2": "^0.34.1"
+    "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
     "@material-ui/core": "^4.10.2",
     "@material-ui/system": "^4.11.2",
+    "@parcel/packager-ts": "^2.8.3",
+    "@parcel/transformer-typescript-types": "^2.8.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/styled-components": "^5.1.5",
+    "parcel": "^2.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-phone-input-2": "^2.15.1",
     "rollup": "^3.20.6",
     "rollup-plugin-import-css": "^3.2.1",
+    "rollup-plugin-typescript2": "^0.34.1",
     "styled-components": "^5.2.1",
     "typescript": "^5.0.4"
   }
