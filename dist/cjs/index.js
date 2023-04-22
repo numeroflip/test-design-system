@@ -1,4 +1,3 @@
-require("./index.css");
 var $dYZEH$materialuisystem = require("@material-ui/system");
 var $dYZEH$styledcomponents = require("styled-components");
 var $dYZEH$reactjsxruntime = require("react/jsx-runtime");

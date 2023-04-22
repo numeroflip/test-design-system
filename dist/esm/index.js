@@ -1,4 +1,3 @@
-import "./index.css";
 import {breakpoints as $26Zo0$breakpoints, compose as $26Zo0$compose, display as $26Zo0$display, flexbox as $26Zo0$flexbox, palette as $26Zo0$palette, positions as $26Zo0$positions, sizing as $26Zo0$sizing, spacing as $26Zo0$spacing, typography as $26Zo0$typography, borders as $26Zo0$borders, shadows as $26Zo0$shadows} from "@material-ui/system";
 import $26Zo0$styledcomponents, {css as $26Zo0$css} from "styled-components";
 import {jsx as $26Zo0$jsx} from "react/jsx-runtime";
